@@ -103,7 +103,7 @@ const MapsPage = () => {
               />  */}
             {/* </div> 
           )} */}
-            <h1 className="text-center">Parcel request</h1>
+            <h3 className="text-center">Parcel request</h3>
             {mapApiLoaded && (
             <div className="msg-title-field">
               {/* <p>search:</p> */}
