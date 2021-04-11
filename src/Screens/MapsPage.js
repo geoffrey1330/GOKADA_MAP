@@ -72,41 +72,19 @@ const MapsPage = () => {
       >
         <div
           style={{
-            flex: 0.8,
+            flex:0.95,
             color: "purple",
             font: "1.4rem",
+            margin:"0 auto",
             
             
           }}
         >  
-           {/* {mapApiLoaded && (
-            <div className="msg-title-field"> */}
-              {/* <p>search:</p> */}
-              {/* <AutoComplete
-                map={mapInstance}
-                mapApi={mapApi}
-                setAuto1={setAuto1}
-                addplace={async (place) => {
-                  setAuto1([...auto1, place]);
-                  const { address_components } = place;
-                  locator=address_components[0].long_name + ","+ address_components[1].long_name 
-                  const { short_name } = address_components[
-                    address_components.length - 2
-                  ];
-                  console.log(short_name);
-                  const res = await fetch(
-                    `https://pvc-api.osinachi.me/api/states/${short_name}`
-                  );
-                  const data = await res.json();
-                  console.log(data);
-                }}
-              />  */}
-            {/* </div> 
-          )} */}
+          
             <h3 className="text-center">Parcel request</h3>
             {mapApiLoaded && (
-            <div className="msg-title-field">
-              {/* <p>search:</p> */}
+            <div className="mb-4">
+              
               <AutoComplete
                 map={mapInstance}
                 mapApi={mapApi}
@@ -131,8 +109,7 @@ const MapsPage = () => {
           )}
 
           {mapApiLoaded && (
-            <div className="msg-title-field"> 
-              {/* <p>search:</p> */}
+            <div className="mb-4">
                <AutoComplete
                 map={mapInstance}
                 mapApi={mapApi}
