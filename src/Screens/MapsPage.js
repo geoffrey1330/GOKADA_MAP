@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import GoogleMapReact from "google-map-react";
 import AutoComplete from "../Components/AutoComplete.jsx";
-import AutoComplete2 from "../Components/AutoComplete2.jsx";
 import Marker from "../Components/Marker";
 import "../Components/Sidenav/sidenav.css";
 import Pin from "../icons/location-pin.svg";
@@ -73,15 +72,13 @@ const MapsPage = () => {
         <div
           style={{
             flex:0.95,
-            color: "purple",
             font: "1.4rem",
             margin:"0 auto",
-            
             
           }}
         >  
           
-            <h3 className="text-center">Parcel request</h3>
+            <h3 className="text-center text-capitalize">Parcel request</h3>
             {mapApiLoaded && (
             <div className="mb-4">
               
