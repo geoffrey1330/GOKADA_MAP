@@ -65,7 +65,7 @@ class AutoComplete extends Component {
           type="text"
           onFocus={this.clearSearchBox}
           className="form-control"
-          placeholder="Pickup address"
+          placeholder={this.props.searchfield}
         />
      //</Wrapper>
     );

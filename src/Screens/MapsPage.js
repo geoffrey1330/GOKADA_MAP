@@ -125,6 +125,7 @@ const MapsPage = () => {
                   const data = await res.json();
                   console.log(data);
                 }}
+                searchfield={"Pickup address"}
               />
             </div>
           )}
@@ -132,7 +133,7 @@ const MapsPage = () => {
           {mapApiLoaded && (
             <div className="msg-title-field"> 
               {/* <p>search:</p> */}
-              { <AutoComplete
+               <AutoComplete
                 map={mapInstance}
                 mapApi={mapApi}
                 addplace={async (place) => {
@@ -148,7 +149,9 @@ const MapsPage = () => {
                   const data = await res.json();
                   console.log(data);
                 }}
-              />  }
+                searchfield={"Dropoff address"}
+              /> 
+
              </div> 
           )}
 
